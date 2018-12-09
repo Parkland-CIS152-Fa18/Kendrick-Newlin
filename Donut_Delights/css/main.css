@@ -109,12 +109,16 @@ textarea {
     flex-basis: 10%;
     order: 1;
 }
-#nav_menu_index{
+#nav_menu{
     background-image: url(../img/nav_menu_background.jpg);
     order: 2;
     flex-basis: auto;
-    height: 29%;
-    margin: 0 20%
+    flex-wrap: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 150%;
+    align-items: flex-start;
+    
 }
 #hs_logo {
     flex-basis: auto;
@@ -122,8 +126,10 @@ textarea {
 }
 #nav_menu ul {
     list-style-type: none;
-    padding: 1em 0;         
-    text-align: left;}
+    padding: 0 0 10%;         
+    text-align: center;
+    
+}
 #nav_menu ul li {
     display: inline;
     padding: 0 1.5em;}
@@ -140,27 +146,26 @@ textarea {
 }
 #breakfast{
     text-align: center;
+    font-size: 125%
 }
-#gallery1 {
-    height: 10%;
-    width: 10%;
+#middle_row {
+    display: flex;
 }
-
-#gallery2 {
-    height: 10%;
-    width: 10%;
+.cycle-slideshow {
+    font-size: 110%;
+    text-align: center;
+    flex-basis: 125%;
+    width: 25%;
+    padding: 0% 5% 0% 0;
 }
-
-#gallery3{
-    height: 10%;
-    width: 10%;
+.twitter-timeline {
+    flex-basis: 50%;
 }
 #nav_menu_not_index{
     background-image: url(../img/nav_menu_background.jpg);
-    order: 2;
-    flex-basis: auto;
     height: 9%;
-    margin: 0 20%
+    margin-left: auto;
+    margin-right: auto;
 }
 #nav_menu_not_index ul {
     list-style-type: none;
@@ -174,25 +179,100 @@ textarea {
     font-size: 150%;
     font-family: arial, Times, serif;
     color: rgb(252,209,68); }
-#iframe {
-    display: flex;
-}
-#right_column {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-#left_column {
+/*
+
+*/
+#right_column_location {
+    padding: 1% 5% 0 0%;
+    float: right;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    font-size: 135%
+}
+#left_column_location {
+    padding: 1% 0 0 5%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    font-size: 175%;
+/*    text-align: center;*/
+}
+#right_column_about {
+    font-size: 120%;
+    float: right;
+    padding: 0 10% 0 0;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+/*    align-items: flex-start;*/
+}
+#left_column_about {
+/*    padding: 0 0.5% 0 72%;*/
+    padding-left: 10%;
+    font-size: 120%;
+    float: left;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+/*    align-items: flex-start;*/
+    text-align: left;
+}
+#storefront {
+    order: 1;
+}
+.google-maps {
+        position: relative;
+        padding-bottom: 75%;
+        height: 0;
+        overflow: hidden;
+ }
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 }
 
-
-
-
-
-
+#email_entry {
+    padding-bottom: 10%;
+}
+#review_entry {
+    padding-bottom: 10%;
+}
+#antonidas_div {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 1% 1%;
+}
+.menu_headers {
+    color: #5b0f00;
+}
+#menu_column {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    float: left;
+    padding: 1% 5% 0 1%;
+}
+#topsellers_column {
+    display: flex;
+    flex-direction: column;
+/*    float: right;*/
+    width: 10%;
+}
+.center {
+    padding: 5%;
+}
+#index_paragraph {
+    font-size: 150%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== 
